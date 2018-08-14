@@ -1,0 +1,10 @@
+<h2>Cadastro de Morador</h2>
+<form>
+  <mat-form-field>
+    <input matInput placeholder="Nome" required>
+  </mat-form-field>
+  <mat-form-field>
+      <input matInput placeholder="CPF" required>
+    </mat-form-field>
+    <button [routerLink]="['/cadastro-morador']" mat-raised-button color="primary" (click)="TestaAPI()">Adicionar Morador</button>
+</form>
