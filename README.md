@@ -1,27 +1,11 @@
 # Dwavisit
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.1.
+- Nosso projeto consiste em um Single-page Application cujo moradores de um condomínio poderão ajudar os funcionários da portaria do prédio a controlar quem entra ou sai da sua residência.
 
-## Development server
+- Com o sistema, cada condômino terá em mãos todas as informações sobre as pessoas que vivem na residência e os que os visitam com mais ou menos frequência, podendo avisar de maneira antecipada o porteiro/segurança que pessoas que não residem no condomínio irão chegar em breve, agilizando a entrada/saída de veículos ou pedestres do local.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Equipe:
+- Arthur
+- Hewerton
+- João Bosco
+- Letícia
