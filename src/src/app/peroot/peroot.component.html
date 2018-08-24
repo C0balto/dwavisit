@@ -1,0 +1,46 @@
+
+<mat-grid-list cols="4" rowHeight="100px" gutterSize='0'>
+  <mat-grid-tile colspan='1' rowspan='1'>
+    <mat-toolbar id='title'>
+        <mat-icon>whatshot&nbsp;</mat-icon>{{title}}
+    </mat-toolbar>
+  </mat-grid-tile>
+  <mat-grid-tile colspan='3' rowspan='1'>
+    <mat-toolbar id='set'>
+      <mat-icon>settings</mat-icon>
+      <mat-icon>clear</mat-icon>
+    </mat-toolbar>
+  </mat-grid-tile>
+  <mat-grid-tile colspan='1' rowspan='4'>
+    <mat-toolbar>  
+      <mat-toolbar-row>
+        <img src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" > Helena Santos - Apt 602 
+      </mat-toolbar-row>
+      <mat-toolbar-row class='nav-animate' [routerLink]="['/visao']">
+        <mat-icon>home</mat-icon>
+        <span>Visão Geral</span>
+      </mat-toolbar-row>
+      <mat-divider></mat-divider>
+      <mat-toolbar-row class='nav-animate' [routerLink]="['/moradores']">
+        <mat-icon>face</mat-icon>
+        <span>Moradores</span>
+      </mat-toolbar-row>
+      <mat-toolbar-row class='nav-animate' [routerLink]="['/visitantes']">
+        <mat-icon matBadge="1" matBadgePosition="above after" matBadgeColor="accent">supervised_user_circle</mat-icon>
+        <span>Visitantes</span>
+      </mat-toolbar-row>
+      <mat-toolbar-row class='nav-animate' [routerLink]="['/monitoramento']">
+        <mat-icon>visibility</mat-icon>
+        <span>Monitoramento</span>
+      </mat-toolbar-row>
+  </mat-toolbar>
+    
+  </mat-grid-tile>
+
+  <mat-grid-tile colspan='3' rowspan='4'gutterSize='0'>
+      <mat-toolbar id='colorbg'>
+        <router-outlet></router-outlet>
+      </mat-toolbar>
+  </mat-grid-tile>
+  
+</mat-grid-list>
