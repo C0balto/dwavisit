@@ -2,6 +2,7 @@ mat-list{
   background-color: #343B4A;
   color:#fff;
   width:25%;
+  height: 76vh;
 }
 a mat-list-item{
   text-decoration:none;
