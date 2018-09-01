@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { MatCardModule, MatIconModule, MatToolbarModule , MatListModule, MatGridListModule, MatDividerModule } from '@angular/material';
 import { MatTableModule, MatButtonModule, MatInputModule } from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';

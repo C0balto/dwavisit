@@ -6,9 +6,16 @@ mat-list{
 a mat-list-item{
   text-decoration:none;
   color:#fff;
+  transition: 0.5s ease;
 }
 a mat-list-item:hover{
   background-color:#83988E;
+  padding-left:10px;
+  transition: 0.5s ease;
+}
+
+a {
+  text-decoration: none;
 }
 
 mat-card-header div{
@@ -32,3 +39,4 @@ mat-card.mat-card .mat-card-title{
 mat-card.mat-card .mat-card-subtitle{
   color:#fff;
 }
+
