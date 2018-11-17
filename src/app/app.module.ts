@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MatCardModule, MatIconModule, MatToolbarModule , MatListModule, MatGridListModule, MatDividerModule } from '@angular/material';
-import { MatTableModule, MatButtonModule, MatInputModule } from '@angular/material';
+import { MatTableModule, MatButtonModule, MatInputModule, MatRadioModule } from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -45,7 +45,8 @@ import { CadastroVisitantesComponent } from './cadastro/cadastro-visitantes/cada
     MatTableModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatInputModule
+    MatInputModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]

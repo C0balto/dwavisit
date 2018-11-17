@@ -1,4 +1,4 @@
-.title {
+/* .title {
     position: absolute;
     top:110px;
     height:50px;
@@ -124,4 +124,17 @@ td {
 
 mat-header-row, mat-row{
     border: none;
-}
+} */
+
+
+.container-flex{
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+  }
+  .parte-flex{
+    flex:1 1 50%;
+    margin:0 10px;
+  }
+  
+  
