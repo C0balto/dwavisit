@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { MongoService } from 'src/app/services/mongo.service';
 
 @Component({
   selector: 'dwa-visao-geral',
@@ -8,12 +9,16 @@ import { HttpClient } from '@angular/common/http';
 })
 export class VisaoGeralComponent implements OnInit {
 
-  constructor(private http: HttpClient) { }
-  getMoradores() {
-    const retorno = this.http.get('http://localhost:3000/').subscribe(data => data.toString());
-    console.log(retorno);
-  }
-  ngOnInit() {
-  }
+  retornoDB: any;
 
+  constructor() {}
+
+  ngOnInit() {}
+
+  // testeDB() {
+  //   return this.mongoService.getDB().subscribe((data) => {
+  //     console.log(data);
+  //     this.retornoDB = data;
+  //   });
+  // }
 }

@@ -1,17 +1,10 @@
 import {Component} from '@angular/core';
+import { MongoService } from 'src/app/services/mongo.service';
 
 export interface PeriodicElement {
   name: string;
   cpf: string;
 }
-
-const ELEMENT_DATA: PeriodicElement[] = [
-  {name: 'João Bosco', cpf: '666.666.666-66'},
-  {name: 'Letícia', cpf: '333.333.333-22'},
-  {name: 'Arthur', cpf: '555.555.666-78'},
-  {name: 'Hewerton', cpf: '555.555.666-78'}
-];
-
 /**
  * @title Basic use of `<table mat-table>`
  */
@@ -22,5 +15,17 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class TableBasicExampleComponent {
   displayedColumns: string[] = ['name', 'cpf'];
-  dataSource = ELEMENT_DATA;
+  retornoDB: any;
+  dataSource: any;
+
+  constructor(private mongoService: MongoService) {
+    this.mongoDB();
+  }
+
+  mongoDB() {
+    this.dataSource = this.mongoService.getDB().subscribe((data) => {
+      this.retornoDB = data;
+    });
+    console.log('data source: ' + this.dataSource);
+  }
 }
