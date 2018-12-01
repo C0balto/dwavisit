@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { MatCardModule, MatIconModule, MatToolbarModule , MatListModule, MatGridListModule, MatDividerModule } from '@angular/material';
 import { MatTableModule, MatButtonModule, MatInputModule, MatRadioModule } from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -46,7 +47,8 @@ import { CadastroVisitantesComponent } from './cadastro/cadastro-visitantes/cada
     BrowserAnimationsModule,
     MatButtonModule,
     MatInputModule,
-    MatRadioModule
+    MatRadioModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

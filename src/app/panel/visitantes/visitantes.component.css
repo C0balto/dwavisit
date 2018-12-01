@@ -28,7 +28,7 @@
     padding:13px 10px 12px 10px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    border-bottom: solid 4px #d6d6d6; 
+    border-bottom: solid 4px #d6d6d6;
 }
 
 .ico-car {
@@ -38,7 +38,7 @@
     padding:13px 10px 12px 10px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    border-bottom: solid 4px #d6d6d6; 
+    border-bottom: solid 4px #d6d6d6;
 }
 
 .title-bt {
@@ -47,7 +47,7 @@
     padding:16px 35px 18px 10px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    border-bottom: solid 4px #50127c; 
+    border-bottom: solid 4px #50127c;
 }
 
 .title-car {
@@ -56,12 +56,12 @@
     padding:16px 35px 18px 10px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    border-bottom: solid 4px #118568; 
+    border-bottom: solid 4px #118568;
 }
 
 .id-left {
     margin-left: 50px;
-    
+
 }
 
 .border-ico {
@@ -94,7 +94,7 @@ button {
     font-size: 0.7em;
     font-family: verdana;
     font-weight: bold;
-    background-color: white;    
+    background-color: white;
 }
 
 mat-icon {
@@ -107,18 +107,18 @@ span {
 
 
 table {
-    background-color: #A6BFE2;  
+    background-color: #A6BFE2;
 
 }
 
 th {
     width: 170px;
     color:white;
-    
+
 }
 td {
     width: 170px;
-    
+
 }
 
 
@@ -136,5 +136,8 @@ mat-header-row, mat-row{
     flex:1 1 50%;
     margin:0 10px;
   }
-  
-  
+
+  h2{
+    font-family: 'Oswald';
+  }
+

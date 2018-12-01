@@ -43,8 +43,6 @@ table {
 	border-spacing: 0;
 }
 
-
-
 /*Sobrescrevendo propriedade do componente mat-grid-title do Material*/
 mat-grid-tile:last-child .mat-figure{
   justify-content: flex-end;
@@ -59,6 +57,7 @@ mat-list .mat-list-item-content{
   font-family:'Oswald';
   text-transform: uppercase;
 }
+
 dwa-panel section{
   padding:20px;
   display:flex;
@@ -90,7 +89,7 @@ dwa-header .mat-grid-list{
 }
 
 dwa-cadastro-moradores, dwa-cadastro-visitantes{
-  width:50%;
+  width:100%;
 }
 dwa-moradores{
   width:100%;
@@ -104,7 +103,6 @@ dwa-moradores{
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/materialicons/v41/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
 }
-
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -119,4 +117,9 @@ dwa-moradores{
   direction: ltr;
   -moz-font-feature-settings: 'liga';
   -moz-osx-font-smoothing: grayscale;
+}
+/*Fontes personalizadas*/
+
+h2{
+  font-family: 'Oswald';
 }

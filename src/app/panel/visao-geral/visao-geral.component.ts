@@ -8,9 +8,11 @@ import { HttpClient } from '@angular/common/http';
 })
 export class VisaoGeralComponent implements OnInit {
 
-
-  constructor() { }
-
+  constructor(private http: HttpClient) { }
+  getMoradores() {
+    const retorno = this.http.get('http://localhost:3000/').subscribe(data => data.toString());
+    console.log(retorno);
+  }
   ngOnInit() {
   }
 
