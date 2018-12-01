@@ -1,15 +1,25 @@
 import { Component, OnInit } from '@angular/core';
+import { MongoService } from 'src/app/services/mongo.service';
 
 @Component({
   selector: 'dwa-moradores',
   templateUrl: './moradores.component.html',
   styleUrls: ['./moradores.component.css']
 })
-export class MoradoresComponent implements OnInit {
+export class MoradoresComponent {
 
-  constructor() { }
+  dataSource: any;
+  retornoDB: any;
 
-  ngOnInit() {
+  constructor(private mongoService: MongoService) {
+    this.retrieveMoradores();
+   }
+
+  retrieveMoradores() {
+    this.dataSource = this.mongoService.getDB().subscribe((data) => {
+    this.retornoDB = data;
+    });
+    console.log('data source: ' + this.dataSource);
   }
 
 }
